@@ -1,6 +1,6 @@
 # Middleman-Extensionless-Helper
 
-middleman-extensionless-helper is a Middleman(only for v3) extension to remove a file extension which is attached to extension-less file by the "automatically adding content extensions" feature in a build process.
+middleman-extensionless-helper is a Middleman(only for v3) extension to remove a file extension which is attached to extension-less files by the "automatically adding content extensions" feature in a build process.
 
 Currently, this extension only works for ERb, and works for files that are specified in the option of this extension.
 
@@ -167,7 +167,7 @@ source/
   (empty)
 ```
 
-Just build again, then messages are:
+Just build again, then message is:
 
 ```
 EH:no-target build/foo  <-- This extension says
@@ -190,4 +190,4 @@ Personal references:
 
 ## License
 
-(c) 2016 AT-AT. MIT Licensed, see [LICENSE] for details.
+(c) 2016 AT-AT. MIT Licensed, see [LICENSE](LICENSE.md) for details.
