@@ -1,0 +1,1 @@
+activate :extensionless_helper
