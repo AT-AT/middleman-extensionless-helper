@@ -29,7 +29,7 @@ module Middleman
 
         # Avoid applying a layout to target files.
         # #page requires a URL having a absolute path from the root that is not the source directory
-        # but the web site. Besides, because of it's the URL, a file name in it must be the same as MM
+        # but the web site. Besides, because it's the URL, a file name in it must be the same as MM
         # names in a build process. Hence the URL looks like "/foo.html"(the original file is "foo").
         @target.each do |target|
           app.page File.join('', target.build), :layout => false
@@ -75,7 +75,7 @@ module Middleman
       private
 
       def convert_source_path(source)
-        # This isn't a smart way, but shouldn't use #split|Regexp because there are some "edge" cases.
+        # This isn't a smart way, but shouldn't use #split|Regexp because there're some "edge" cases.
 
         template_exts = EXTENSION_MAP.keys
 
@@ -132,8 +132,8 @@ module Middleman
 
       def path_of(path_crumb, type, absolute = true)
 
-        # SHOULD get path to the build|source directory at any time of need, because the configuration
-        # value of :build_dir|:source can be updated anytime.
+        # SHOULD get path to the build|source directory at any time of need, because the
+        # configuration value of :build_dir|:source can be updated anytime.
         id = type.to_sym == :build ? :build_dir : :source
         path = File.join(app.config[id], path_crumb)
         absolute ? File.expand_path(path) : path
