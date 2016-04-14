@@ -1,5 +1,5 @@
 module Middleman
-  class ExtensionlessHelper
+  module ExtensionlessHelper
     VERSION = "1.0.0"
   end
 end
