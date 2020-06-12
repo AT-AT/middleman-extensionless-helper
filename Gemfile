@@ -4,8 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
-  gem "nokogiri", '1.6.3'
-
+  gem 'nokogiri'
   gem 'rake'
   gem 'rdoc'
   gem 'yard'
